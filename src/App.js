@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import sbcData from "./sbc.json";
 import Leagues from "./Leagues.js";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 import Teams from "./Teams";
 
 const matchedTeams = (arr, id) => arr.find(elem => elem.id === id).teams;
@@ -33,12 +33,12 @@ const App = () => {
             <div className="my-4">
                 <Route
                     exact
-                    path={process.env.PUBLIC_URL + "/"}
+                    path="/"
                     render={props => <Leagues {...props} leagues={sbcs} />}
                 />
 
                 <Route
-                    path={process.env.PUBLIC_URL + "/:id"}
+                    path="/:id"
                     render={props => (
                         <Teams
                             {...props}

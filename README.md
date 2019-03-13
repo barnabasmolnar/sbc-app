@@ -1,3 +1,14 @@
+# SBC App
+
+An application that helps me keep track of which league SBCs (squad building challenges) I have already done in FIFA 19's Ultimate Team game mode.
+
+
+A live, working demo of the app can be found here: https://barnabasmolnar.github.io/sbc-app/#/
+
+<br>
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
